@@ -25,14 +25,13 @@ public class HelloController {
 
     @GetMapping("/status")
     public String status(){
-        return "API running -" + LocalDate.now().toString();
+        return "API running -" + LocalDate.now();
     }
 
     @GetMapping("/goodbye")
     public String goodbye() {
         return "Goodbye from Spring Boot!";
     }
-
 }
 
 
